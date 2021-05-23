@@ -18,10 +18,12 @@ body {
 
     }
 
-
+.container{
+  height: 10vh;
+  width: 100%;
+}
 
 .text{
-  z-index: 1;
   font-size: 25px;
   text-align: center;
   padding: 10rem
@@ -37,14 +39,46 @@ margin: 5px;
 
 }
 
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
 
-  .text{
-    font-size: 40px;
+    .text{
+      font-size: 50px;
+      text-align: center;
+      padding: 13rem;
+    }
+    .main{
     text-align: center;
-    padding: 10rem
-  }
+    }
+    .social img{
+    text-align: center;
+    margin: 5px;
+  height: 80px;
+  width: 80px;
+
+    }
+
+
+ }
+
+ @media only screen and (device-width: 768px) {
+   /* default iPad screens */
+   .text{
+     font-size: 50px;
+     text-align: center;
+     padding: 13rem;
+   }
+   .main{
+   text-align: center;
+   }
+   .social img{
+   text-align: center;
+   margin: 5px;
+ height: 90px;
+ width: 90px;
+
+   }
+
 }
 
 /*#video{
