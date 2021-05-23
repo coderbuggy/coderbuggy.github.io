@@ -8,6 +8,7 @@
   box-sizing: border-box;
   color: white;
   font-family: 'Pattaya', 'sans-serif';
+  background: black;
 }
 
 body {
@@ -36,7 +37,17 @@ margin: 5px;
 
 }
 
-#video{
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+  .text{
+    font-size: 40px;
+    text-align: center;
+    padding: 10rem
+  }
+}
+
+/*#video{
         position:fixed;
         z-index: -1;
-}
+}*/
